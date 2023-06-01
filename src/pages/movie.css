@@ -1,0 +1,29 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+  
+.filter-container {
+  padding: 10px;
+  column-gap: 10px;
+  background-color: #b2dfeb;
+  display: flex;
+  align-items: center;
+}
+
+.movie-container{ 
+  display: flex;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .filter-container {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .movie-container {
+    flex-direction: column;
+  }
+}

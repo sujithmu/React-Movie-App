@@ -1,0 +1,45 @@
+.movie-list-container {
+    flex:1;
+    border-right: 1px solid #b2dfeb;
+}
+
+.movie-list {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-item {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid #b2dfeb;
+    cursor: pointer;
+}
+
+.movie-item-div {
+    display: flex;
+}
+
+.release-date,.episode-number {
+    color: var(--tertiary);
+}
+
+.movie-title {
+    margin: 0 20px;
+    flex-grow: 1;
+}
+
+.movie-rating {
+    margin: 0 20px;
+    color: #dec332
+}
+
+.movie-rating-list {
+    color: #dec332
+}
+
+.rating-sources {
+    border-radius: 4px;
+    border: 1px #b2dfeb;
+    background-color: #b2dfeb;
+}

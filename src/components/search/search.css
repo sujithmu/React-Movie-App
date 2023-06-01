@@ -1,0 +1,14 @@
+.search-container {
+    display: flex;
+    width: 100%;
+}
+
+.search-input {
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.search-input:focus {
+    outline: none;
+}

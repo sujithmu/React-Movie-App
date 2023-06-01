@@ -1,0 +1,21 @@
+.no-movie {
+    color: #949292;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.movie-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.movie-poster {
+    height: 175px;
+    width: 135px;
+    float: left;
+    margin: 5px;
+}
+
+.movie-description {
+    text-align: justify;
+}
