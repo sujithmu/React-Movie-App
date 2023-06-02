@@ -11,6 +11,7 @@ function App() {
         const records = await axios.get(
           "https://swapi.dev/api/films/?format=json"
         );
+        setLoading(false);
         let rec = records.data.results;
         let poster = "";
         for(let i = 0;i < rec.length;i++) {
@@ -42,6 +43,7 @@ function App() {
           }
           // Setting rating sources
           rec[i].ratingsSources = ratingSources;
+
           if(rateCalc) {
             for(let i = 0;i < 10;i++) {
               if (rateCalc - 1 < i) {
@@ -53,11 +55,12 @@ function App() {
           } else {
             stars = [];
           }
+          // Setting calculate rating for sorting
           rec[i].rateCalc = rateCalc;
+          // Setting stars for rating
           rec[i].starRatings = stars;
         }
-        setMovies(rec);
-        setLoading(false);
+        setMovies(rec); 
       } catch (error) {
         console.log(error);
         setLoading(false);
