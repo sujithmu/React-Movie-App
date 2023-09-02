@@ -1,5 +1,5 @@
-import { convertToRoman } from '../../utils/roman';
-import "./moviedetails.css";
+import { convertToRoman } from '../../utils/roman'
+import './moviedetails.css'
 
 type AppProps = {
     selectedMovie: any;
@@ -14,7 +14,7 @@ function MovieDetails ({ selectedMovie }: AppProps) {
             (
                 <div>
                     <h1>
-                        Episode {convertToRoman(selectedMovie.episode_id)} -{" "}
+                        Episode {convertToRoman(selectedMovie.episode_id)} -{' '}
                         {selectedMovie.title}
                     </h1>
                     <img className="movie-poster" src={selectedMovie.poster.data.Poster} alt="postername"></img>
@@ -25,7 +25,7 @@ function MovieDetails ({ selectedMovie }: AppProps) {
                 </div>
             )}
         </div>
-    );
+    )
 }
 
-export default MovieDetails;
+export default MovieDetails
